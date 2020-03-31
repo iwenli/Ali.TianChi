@@ -9,7 +9,7 @@ namespace Ali.TianChi.Competition
             // 第一期
             Docker.Run();
 
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }
