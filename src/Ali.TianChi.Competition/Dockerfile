@@ -1,7 +1,6 @@
 
-MAINTAINER iwenli<github.com/iwenli>
-
 FROM mcr.microsoft.com/dotnet/core/runtime:3.1 AS base
+MAINTAINER iwenli<github.com/iwenli>
 WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
