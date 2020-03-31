@@ -3,6 +3,7 @@
   <PropertyGroup>
     <ShowAllFiles>true</ShowAllFiles>
     <ActiveDebugProfile>Ali.TianChi.Competition</ActiveDebugProfile>
+    <_LastSelectedProfileId>E:\1开发\编码\dotnet\Ali.TianChi\src\Ali.TianChi.Competition\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

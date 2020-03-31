@@ -5,12 +5,12 @@ WORKDIR /source
 
 # copy csproj and restore as distinct layers
 COPY *.sln .
-COPY Ali.TianChi.Competition/*.csproj ./netcoreapp/
+COPY Ali.TianChi.Competition/*.csproj ./Ali.TianChi.Competition/
 RUN dotnet restore
 
 # copy everything else and build app
-COPY netcoreapp/. ./netcoreapp/
-WORKDIR /source/netcoreapp
+COPY Ali.TianChi.Competition/. ./Ali.TianChi.Competition/
+WORKDIR /source/Ali.TianChi.Competition
 RUN dotnet publish -c release -o /app --no-restore
 
 # final stage/image
