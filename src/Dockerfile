@@ -3,13 +3,13 @@ MAINTAINER iwenli<github.com/iwenli>
 WORKDIR /source
 
 # copy csproj and restore as distinct layers
-COPY ../*.sln .
-COPY *.csproj ./coreapp/
+COPY *.sln .
+COPY Ali.TianChi.Competition/*.csproj ./publish/
 RUN dotnet restore
 
 # copy everything else and build app
-COPY coreapp/. ./coreapp/
-WORKDIR /source/coreapp
+COPY publish/. ./publish/
+WORKDIR /source/publish
 RUN dotnet publish -c release -o /app --no-restore
 
 # final stage/image
