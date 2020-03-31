@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Ali.TianChi.Competition": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
