@@ -11,6 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="run.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="run.sh">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
