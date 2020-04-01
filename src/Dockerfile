@@ -15,6 +15,6 @@ RUN dotnet publish -c release -o /app --no-restore
 
 # final stage/image
 FROM mcr.microsoft.com/dotnet/core/runtime:3.1
-COPY --from=build /app/* ./
-WORKDIR /
+WORKDIR /app
+COPY --from=build /app ./
 CMD ["sh", "run.sh"]
