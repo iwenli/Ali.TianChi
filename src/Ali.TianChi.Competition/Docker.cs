@@ -46,15 +46,15 @@ namespace Ali.TianChi.Competition
                 Console.WriteLine($"not exists file:{dataFileFullPath}");
                 return;
             }
-            
+
             var list = File.ReadAllLines(dataFileFullPath).Select(m => Convert.ToInt32(m));
             //var list = Enumerable.Range(1, 1000).Where(m => m % 3 == 0);
-            var max = list.Max();
-            var top10 = list.Distinct().OrderByDescending(m => m).Take(10);
+            var sum = list.Sum();
+            var top10 = list.OrderByDescending(m => m).Take(10);
             var obj = new
             {
                 Q1 = "Hello world",
-                Q2 = max,
+                Q2 = sum,
                 Q3 = top10
             };
 
