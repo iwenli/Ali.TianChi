@@ -1,1 +1,1 @@
-﻿dotnet Ali.TianChi.Competition.dll
+dotnet Ali.TianChi.Competition.dll
