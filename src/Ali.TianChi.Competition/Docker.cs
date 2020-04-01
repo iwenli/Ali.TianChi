@@ -64,7 +64,6 @@ namespace Ali.TianChi.Competition
                 WriteIndented = true
             });
 
-            Console.WriteLine($"run success.");
             Console.WriteLine(result);
             File.WriteAllText(resultJsonFullPath, result, new UTF8Encoding(false));
         }
